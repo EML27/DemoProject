@@ -25,5 +25,10 @@ class MainActivity : AppCompatActivity() {
                 action = "stop"
             })
         }
+
+        btnGoToRV.setOnClickListener {
+            startActivity(Intent(this, RecyclerActivity::class.java))
+        }
+
     }
 }
